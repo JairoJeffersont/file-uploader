@@ -83,8 +83,8 @@ Array
 Possible return (error):
 Array
 (
-    [status] => format_not_allowed
-    [message] => File type not allowed.
+    [status] => file_not_found
+    [message] => 'File not found.
 )
 */
 
