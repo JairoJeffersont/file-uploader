@@ -55,6 +55,12 @@ Array
     [status] => format_not_allowed
     [message] => File type not allowed.
 )
+
+Array
+(
+    [status] => max_file_size_exceeded
+    [message] => File exceeds the limit of {$maxSize} MB.
+)
 */
 
 ```
