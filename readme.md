@@ -32,7 +32,6 @@ composer require your-namespace/file-uploader
 ### 1. Uploading a file
 
 ```php
-require_once 'path/to/FileUploader.php';
 
 use EasyFileUploader\FileUploader;
 
