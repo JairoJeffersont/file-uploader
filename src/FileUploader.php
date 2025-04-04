@@ -1,6 +1,6 @@
 <?php
 
-namespace FileUploader;
+namespace EasyFileUploader;
 
 /**
  * FileUploader Class

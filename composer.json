@@ -1,11 +1,11 @@
 {
-    "name": "jairojeffsantos/file-uploader",
+    "name": "jairojeffsantos/easy-file-uploader",
     "description": "PHP library to handle file uploads with MIME type and size validation, automatic directory creation, and support for file deletion.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "FileUploader\\": "src/"
+            "EasyFileUploader\\": "src/"
         }
     },
     "authors": [

@@ -1,5 +1,5 @@
 
-# FileUploader
+# EasyFileUploader
 
 **FileUploader** is a lightweight PHP class to handle secure file uploads and deletions.  
 It supports MIME type validation, maximum file size checks, automatic directory creation, and file deletion.
