@@ -34,7 +34,7 @@ $uploader = new FileUploader();
 $result = $uploader->uploadFile(
     __DIR__ . '/uploads',                // Target directory
     $_FILES['file'],                     // File from form
-    ['image/jpeg', 'image/png'],         // Allowed MIME types
+    ['image/jpeg', 'image/png', 'application/pdf'],         // Allowed MIME types
     5                                    // Max file size in MB
 );
 
