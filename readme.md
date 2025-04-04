@@ -15,13 +15,7 @@ It supports MIME type validation, maximum file size checks, automatic directory 
 
 ## 📦 Installation
 
-If using manually:
-
-```bash
-# Clone or download this repo and include the class in your project
-```
-
-If using Composer (coming soon):
+Using Composer:
 
 ```bash
 composer require your-namespace/file-uploader
