@@ -76,8 +76,7 @@ Possible return (success):
 Array
 (
     [status] => success
-    [message] => File uploaded successfully.
-    [file_path] => /your/project/uploads/file_643f3a9c8e2d0.png
+    [message] => File deleted successfully.
 )
 
 Possible return (error):
