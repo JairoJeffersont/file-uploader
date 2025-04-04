@@ -3,9 +3,9 @@
 namespace EasyFileUploader;
 
 /**
- * UploadFile Class
+ * FileUploader Class
  * 
- * The `UploadFile` class is responsible for managing file uploads, including:
+ * The `FileUploader` class is responsible for managing file uploads, including:
  * - File type and size validation.
  * - Storing files in a specific directory.
  * - Deleting files from the server.
@@ -15,7 +15,7 @@ namespace EasyFileUploader;
  * 
  * @package EasyFileUploader
  */
-class UploadFile {
+class FileUploader {
 
     /**
      * Uploads a file to a specified directory.
