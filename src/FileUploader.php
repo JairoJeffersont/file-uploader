@@ -13,7 +13,7 @@ namespace EasyFileUploader;
  * It also provides error checking during the upload process and security features such as MIME type validation 
  * and automatic creation of destination directories when needed.
  * 
- * @package FileUploader
+ * @package EasyFileUploader
  */
 class FileUploader {
 
