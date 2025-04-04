@@ -1,5 +1,5 @@
 
-# EasyFileUploader
+# FileUploader
 
 **FileUploader** is a lightweight PHP class to handle secure file uploads and deletions.  
 It supports MIME type validation, maximum file size checks, automatic directory creation, and file deletion.
@@ -46,6 +46,24 @@ $result = $uploader->uploadFile(
 );
 
 print_r($result);
+
+/*
+Possible return (success):
+Array
+(
+    [status] => success
+    [message] => File uploaded successfully.
+    [file_path] => /your/project/uploads/file_643f3a9c8e2d0.png
+)
+
+Possible return (error):
+Array
+(
+    [status] => format_not_allowed
+    [message] => File type not allowed.
+)
+*/
+
 ```
 
 ### 2. Deleting a file
@@ -53,6 +71,24 @@ print_r($result);
 ```php
 $result = $uploader->deleteFile(__DIR__ . '/uploads/file_abc123.png');
 print_r($result);
+
+/*
+Possible return (success):
+Array
+(
+    [status] => success
+    [message] => File uploaded successfully.
+    [file_path] => /your/project/uploads/file_643f3a9c8e2d0.png
+)
+
+Possible return (error):
+Array
+(
+    [status] => format_not_allowed
+    [message] => File type not allowed.
+)
+*/
+
 ```
 
 ## ✅ Example Form (HTML)
