@@ -15,7 +15,7 @@ namespace EasyFileUploader;
  * 
  * @package EasyFileUploader
  */
-class FileUploader {
+class UploadFile {
 
     /**
      * Uploads a file to a specified directory.
