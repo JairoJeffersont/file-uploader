@@ -34,7 +34,7 @@ composer require your-namespace/file-uploader
 ```php
 require_once 'path/to/FileUploader.php';
 
-use FileUploader\FileUploader;
+use EasyFileUploader\FileUploader;
 
 $uploader = new FileUploader();
 
