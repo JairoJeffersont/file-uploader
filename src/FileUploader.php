@@ -11,7 +11,7 @@ namespace JairoJeffersont;
  * - Geração de nomes únicos.
  * - Exclusão de arquivos do servidor.
  * 
- * @package App\Helpers
+ * @package JairoJeffersont
  */
 class FileUploader {
     /**
