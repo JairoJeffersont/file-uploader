@@ -1,0 +1,21 @@
+{
+    "name": "jairojeffersont/file-uploader",
+    "description": "Biblioteca PHP simples para upload e exclusão de arquivos com validação de tipo e tamanho.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jairo Jeffersont",
+            "email": "jairojeffersont@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "JairoJeffersont\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "minimum-stability": "stable"
+}
