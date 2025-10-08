@@ -30,12 +30,12 @@ class FileUploader {
     public static function uploadFile(string $directory, array $file, array $allowedTypes, int $maxSize, bool $uniqueFlag = true): array {
         // Verifica erros no upload
         if (!isset($file['error']) || $file['error'] !== UPLOAD_ERR_OK) {
-            return ['status' => 'erro_no_upload', 'error_code' => $file['error'] ?? 'desconhecido'];
+            return ['status' => 'upload_error', 'error_code' => $file['error'] ?? 'desconhecido'];
         }
 
         // Verifica se o arquivo existe temporariamente
         if (!is_uploaded_file($file['tmp_name'])) {
-            return ['status' => 'arquivo_temporario_invalido'];
+            return ['status' => 'invalid_temp_file'];
         }
 
         // Determina o MIME type e a extensão do arquivo
@@ -46,17 +46,17 @@ class FileUploader {
 
         // Valida o tipo do arquivo
         if (!in_array($fileMime, $allowedTypes, true)) {
-            return ['status' => 'formato_nao_permitido'];
+            return ['status' => 'format_not_allowed'];
         }
 
         // Valida o tamanho do arquivo
         if ($file['size'] > $maxSize * 1024 * 1024) {
-            return ['status' => 'tamanho_maximo_excedido'];
+            return ['status' => 'maximum_size_exceeded'];
         }
 
         // Cria o diretório se não existir
         if (!is_dir($directory) && !mkdir($directory, 0755, true) && !is_dir($directory)) {
-            return ['status' => 'falha_criacao_diretorio'];
+            return ['status' => 'directory_creation_failure'];
         }
 
         // Gera nome de arquivo seguro
@@ -67,12 +67,12 @@ class FileUploader {
 
         // Verifica se o arquivo já existe
         if (file_exists($destination)) {
-            return ['status' => 'arquivo_ja_existe'];
+            return ['status' => 'file_already_exists'];
         }
 
         // Move o arquivo para o diretório destino
         if (!move_uploaded_file($file['tmp_name'], $destination)) {
-            return ['status' => 'falha_movimentacao'];
+            return ['status' => 'movement_failure'];
         }
 
         return ['status' => 'success', 'file_path' => str_replace('\\', '/', $destination)];
@@ -92,12 +92,12 @@ class FileUploader {
 
         // Verifica se o arquivo existe
         if (!file_exists($filePath)) {
-            return ['status' => 'arquivo_nao_encontrado'];
+            return ['status' => 'file_not_found'];
         }
 
         // Tenta deletar o arquivo
         if (!unlink($filePath)) {
-            return ['status' => 'falha_exclusao'];
+            return ['status' => 'deletion_failure'];
         }
 
         return ['status' => 'success'];
