@@ -1,6 +1,6 @@
-# EasyUpload
+# FileUploader
 
-EasyUpload é uma biblioteca PHP simples para gerenciar uploads e exclusão de arquivos com segurança, validação de tipo e tamanho, e suporte à geração de nomes únicos.
+FileUploader é uma biblioteca PHP simples para gerenciar uploads e exclusão de arquivos com segurança, validação de tipo e tamanho, e suporte à geração de nomes únicos.
 
 ## Funcionalidades
 
